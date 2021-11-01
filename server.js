@@ -81,6 +81,16 @@ app.post(
                         id: user.id
                     }
                 };
+
+                jwt.sign(
+                    payload,
+                    config.get('jwtSecret'),
+                    { expiresIn: '10h' },
+                    (err, token) => {
+                        if (err) throw err;
+                        res.json({ token: token });
+                    }
+                );
             } catch (error) {
                 res.status(500).send('Server error');
             }
