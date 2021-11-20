@@ -10,7 +10,7 @@ const Register = ({ authenticateUser }) => {
         password: '',
         passwordConfirm: ''
     });
-    const [errorData, serErrorData] = useState({ errors: null });
+    const [errorData, setErrorData] = useState({ errors: null });
 
     const { name, email, password, passwordConfirm } = userData;
     const { errors } = errorData;
@@ -23,7 +23,7 @@ const Register = ({ authenticateUser }) => {
         })
     }
 
-    const register = async () => {
+    const registerUser = async () => {
         if (password !== passwordConfirm) {
             console.log('Passwords do not match');
         }

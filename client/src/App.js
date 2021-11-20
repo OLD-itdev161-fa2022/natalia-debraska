@@ -4,7 +4,6 @@ import axios from 'axios';
 import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 import Register from './components/Register/Register';
 import Login from './components/Login/Login';
-import { response } from 'express';
 
 class App extends React.Component {
   state = {
