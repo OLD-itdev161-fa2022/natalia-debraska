@@ -1,15 +1,5 @@
-.App {
-  text-align: center;
-}
-
 .App-logo {
   height: 40vmin;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
 }
 
 .App-header {
@@ -47,7 +37,7 @@
   color: #09d3ac;
 }
 main {
-  margin: 30px auto;
+  margin: 30px;
 }
 
 
